@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+
+    <div class="container text-dark mt-5">
+        <div class="row justify-content-md-center">
+            <div col-md-5 p-3>
+                <h1>My Google Login Project</h1>
+                {% if user.is_authenticated %}
+                <p>Welcom, {{ user.username }} !</p>
+                {% else %}
+                <h1>Welcom Friend, please log in</h1>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+
+  </body>
+</html>
